@@ -14,7 +14,7 @@ class ProductDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDFBF7),
+      backgroundColor: const Color(0xFFFBF8F3),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -37,7 +37,7 @@ class ProductDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Büyük Görsel Alanı
+            // Büyük Ürün Görseli (Güçlendirilmiş Gölge ile)
             Container(
               height: 280,
               width: double.infinity,
@@ -46,8 +46,9 @@ class ProductDetailScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFF5A3E2B).withOpacity(0.08),
-                    blurRadius: 16,
+                    color: const Color(0xFF2D231E).withOpacity(0.10),
+                    blurRadius: 20,
+                    spreadRadius: 1,
                     offset: const Offset(0, 8),
                   ),
                 ],
@@ -65,42 +66,23 @@ class ProductDetailScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Kategori ve Puan Rozeti
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFC7A17A).withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Text(
-                    product.category,
-                    style: const TextStyle(
-                      color: Color(0xFF5A3E2B),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
+            // Sadece Kategori Rozeti (Yıldız Puanı Kaldırıldı)
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color(0xFFC7A17A).withOpacity(0.2),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Text(
+                product.category,
+                style: const TextStyle(
+                  color: Color(0xFF5A3E2B),
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
                 ),
-                Row(
-                  children: [
-                    const Icon(Icons.star, color: Colors.amber, size: 18),
-                    const SizedBox(width: 4),
-                    Text(
-                      product.rating.toString(),
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                        color: Color(0xFF2D231E),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+              ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 14),
 
             // Ürün Başlığı
             Text(
@@ -144,7 +126,7 @@ class ProductDetailScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
 
-            // Özellikler
+            // Öne Çıkan Özellikler
             const Text(
               'Öne Çıkan Özellikler',
               style: TextStyle(
@@ -164,6 +146,13 @@ class ProductDetailScreen extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(14),
                       border: Border.all(color: const Color(0xFFEADBCE)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFF2D231E).withOpacity(0.04),
+                          blurRadius: 6,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
                     ),
                     child: Text(
                       spec,
@@ -188,8 +177,8 @@ class ProductDetailScreen extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.04),
-              blurRadius: 10,
+              color: Colors.black.withOpacity(0.05),
+              blurRadius: 12,
               offset: const Offset(0, -4),
             ),
           ],
