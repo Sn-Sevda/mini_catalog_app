@@ -1,4 +1,3 @@
-```bash
 # ☕ BrewCraft - Artisan Coffee Gear & Catalog App
 
 **BrewCraft**, nitelikli kahve demleme ekipmanları için tasarlanmış, modern ve performans odaklı bir Flutter mobil mini katalog uygulamasıdır. Standart şablonların dışına çıkılarak sıcak espresso ve fildişi tonlarında özgün bir marka kimliği oluşturulmuş; temiz mimari, modüler klasör yapısı ve saf Flutter State Management prensipleriyle geliştirilmiştir.
@@ -97,17 +96,6 @@ flutter run
 
 * **GitHub:** [@Sn-Sevda](https://www.google.com/search?q=https://github.com/Sn-Sevda)
 
-```
 
----
 
-Bu komut `README.md` dosyasını otomatik olarak oluşturup içine eksiksiz yazacaktır. 
 
-Ardından hemen GitHub'a göndermek için terminalde şu 3 komutu çalıştırabilirsin[cite: 5]:
-
-```bash
-git add .
-git commit -m "docs: Update README with comprehensive architecture and features"
-git push origin main
-
-```
