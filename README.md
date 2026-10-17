@@ -1,5 +1,4 @@
 ```bash
-cat << 'EOF' > README.md
 # ☕ BrewCraft - Artisan Coffee Gear & Catalog App
 
 **BrewCraft**, nitelikli kahve demleme ekipmanları için tasarlanmış, modern ve performans odaklı bir Flutter mobil mini katalog uygulamasıdır. Standart şablonların dışına çıkılarak sıcak espresso ve fildişi tonlarında özgün bir marka kimliği oluşturulmuş; temiz mimari, modüler klasör yapısı ve saf Flutter State Management prensipleriyle geliştirilmiştir.
@@ -97,7 +96,6 @@ flutter run
 ## 👤 Geliştirici
 
 * **GitHub:** [@Sn-Sevda](https://www.google.com/search?q=https://github.com/Sn-Sevda)
-EOF
 
 ```
 
