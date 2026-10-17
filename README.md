@@ -57,8 +57,8 @@ lib/
 
 ## 🛠️ Teknik Altyapı
 
-* **Framework:** Flutter SDK (Material 3)
-* **Programlama Dili:** Dart
+**Flutter Sürümü:** Flutter 3.x (SDK >= 3.22.0 / Material 3)
+**Dart Sürümü:** Dart 3.x (SDK >= 3.4.0)
 * **Durum Yönetimi (State Management):** Pure Flutter `StatefulWidget` & `setState` (Harici paket bağımlılığı olmadan temiz veri akışı)
 * **Tasarım:** Custom Barista Palette (Espresso `#2D231E`, Fildişi `#FDFBF7`, Karamel `#8B5A2B`)
 * **Sürüm Kontrolü:** Git & GitHub
