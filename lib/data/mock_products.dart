@@ -1,0 +1,58 @@
+import '../models/product.dart';
+
+const List<Product> mockProducts = [
+  Product(
+    id: '1',
+    title: 'AirPods Pro (2nd Gen)',
+    subtitle: 'Audio',
+    price: 249.00,
+    imageUrl: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=600&q=80',
+    description: 'Active Noise Cancellation reduces unwanted background noise. Adaptive Transparency lets outside sounds in while reducing loud environmental noise.',
+    specs: ['H2 chip', 'Up to 6 hrs', 'MagSafe'],
+  ),
+  Product(
+    id: '2',
+    title: 'AirPods Max',
+    subtitle: 'Audio',
+    price: 549.00,
+    imageUrl: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80',
+    description: 'An entirely reimagined design. Computational audio combines custom acoustic design with the Apple H1 chip for breakthrough listening experiences.',
+    specs: ['Spatial Audio', '20 hrs battery', 'Smart Case'],
+  ),
+  Product(
+    id: '3',
+    title: 'HomePod',
+    subtitle: 'Speaker',
+    price: 299.00,
+    imageUrl: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80',
+    description: 'Immersive, high-fidelity audio. An intelligent assistant. Works seamlessly with all your Apple devices and Smart Home accessories.',
+    specs: ['High-excursion woofer', 'Room sensing', 'Siri'],
+  ),
+  Product(
+    id: '4',
+    title: 'HomePod Mini',
+    subtitle: 'Devices',
+    price: 99.00,
+    imageUrl: 'https://images.unsplash.com/photo-1589492477829-5e65395b66cc?auto=format&fit=crop&w=600&q=80',
+    description: 'The HomePod mini is jam-packed with innovation, delivering unexpectedly big sound for a speaker of its size. At just 3.3 inches tall, it takes up almost no room but fills the entire room with rich 360-degree audio.',
+    specs: ['3.3 inches', '360-degree', '5 colors'],
+  ),
+  Product(
+    id: '5',
+    title: 'MacBook Pro 14"',
+    subtitle: 'Laptop',
+    price: 1999.00,
+    imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80',
+    description: 'Mind-blowing performance with the M-series chips. Incredible Liquid Retina XDR display and advanced audio and camera system.',
+    specs: ['Liquid Retina', '18 hrs battery', 'Thunderbolt 4'],
+  ),
+  Product(
+    id: '6',
+    title: 'iPad Air',
+    subtitle: 'Tablet',
+    price: 599.00,
+    imageUrl: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80',
+    description: 'Light. Bright. Full of might. Turbocharged by the revolutionary processing power, stunning Liquid Retina display, and blazing-fast wireless.',
+    specs: ['10.9-inch', 'Touch ID', 'Apple Pencil support'],
+  ),
+];
